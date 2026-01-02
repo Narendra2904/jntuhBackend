@@ -19,7 +19,7 @@ app.add_middleware(
 # ---------------- STARTUP ----------------
 @app.on_event("startup")
 async def startup():
-    await init_db()
+    #await init_db()
 
 
 # ---------------- ROOT ----------------
@@ -101,7 +101,7 @@ async def get_result(htno: str):
         )
 
     # 4️⃣ SAVE
-    await save_result_to_db(htno, normalized)
+    #await save_result_to_db(htno, normalized)
     set_cache(htno, normalized)
 
     return {
