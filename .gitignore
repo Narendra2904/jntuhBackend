@@ -1,18 +1,4 @@
-# Python cache
-__pycache__/
-*.pyc
-*.pyo
 
-# Virtual environment
-venv/
-.env
-
-# SQLite databases
-*.db
-
-# Cache files
-cache/
-*.json
 
 # OS files
 .DS_Store
