@@ -2,9 +2,9 @@ from fastapi import FastAPI, HTTPException
 from fastapi.middleware.cors import CORSMiddleware
 import traceback
 
-from .scraper import scrape_all_results
-from .cache import get_cache, set_cache
-from .database import init_db, get_result_from_db, save_result_to_db
+from scraper import scrape_all_results
+from cache import get_cache, set_cache
+from database import init_db, get_result_from_db, save_result_to_db
 
 app = FastAPI(title="JNTUH Results API")
 
