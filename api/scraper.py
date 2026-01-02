@@ -87,7 +87,7 @@ class ResultScraper:
         is_rcrv = "rcrv" in payload.lower()
         try:
             async with sem:
-                async with session.get(url, ssl=False, timeout=10) as r:
+                async with session.get(url, ssl=False, timeout=8) as r:
                     if r.status == 200:
                         html_content = await r.text()
                         return semester, exam_code, html_content, is_rcrv
