@@ -19,7 +19,7 @@ app.add_middleware(
 # ---------------- STARTUP ----------------
 @app.on_event("startup")
 async def startup():
-    #await init_db()
+    await init_db()
 
 
 # ---------------- ROOT ----------------
